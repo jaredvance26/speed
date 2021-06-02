@@ -1,0 +1,4 @@
+
+
+class OutputService:
+    pass
