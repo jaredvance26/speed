@@ -7,7 +7,7 @@ class Word:
         Service Provider
 
     Attributes:
-        words
+        words = takes in the words from the file into a list format
 
     """ 
     def __init__(self):
