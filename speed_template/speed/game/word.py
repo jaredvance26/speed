@@ -1,6 +1,7 @@
 import random
 import time
-class Word:
+from actor import Actor
+class Word(Actor):
     """ Picks a random word and returns it 
     
     Stereotype: 
@@ -12,6 +13,7 @@ class Word:
     """ 
     def __init__(self):
         """ Class constructor. Reads file and splits it into a list """
+        super().__init__()
 
         with open ('/Users/densmoreb/Desktop/21Spring/CSE 210/week07/speed/speed_template/speed/game/words.txt') as file:
             words = file.read()

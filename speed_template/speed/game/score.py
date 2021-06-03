@@ -12,7 +12,7 @@ class Score:
         """ Class constrtructor. Sets the current score into a private variable """
         self._current_score = 0
 
-    def add_points(self, points):
+    def add_score(self, points):
         """ Adds points to current score """
         self._current_score += points
 
