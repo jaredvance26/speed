@@ -1,4 +1,5 @@
-class Score:
+from game.actor import Actor
+class Score(Actor):
     """ Keeps track of the score of the player 
     
         Stereotype:
@@ -10,6 +11,7 @@ class Score:
 
     def __init__(self):
         """ Class constrtructor. Sets the current score into a private variable """
+        super().__init__()
         self._current_score = 0
 
     def add_score(self, points):
