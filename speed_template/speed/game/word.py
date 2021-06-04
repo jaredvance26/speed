@@ -1,6 +1,7 @@
 import random
 import time
 from actor import Actor
+import constants
 class Word(Actor):
     """ Picks a random word and returns it 
     
@@ -15,10 +16,12 @@ class Word(Actor):
         """ Class constructor. Reads file and splits it into a list """
         super().__init__()
 
-        with open ('/Users/densmoreb/Desktop/21Spring/CSE 210/week07/speed/speed_template/speed/game/words.txt') as file:
-            words = file.read()
+        # with open ('/Users/densmoreb/Desktop/21Spring/CSE 210/week07/speed/speed_template/speed/game/words.txt') as file:
+        #     words = file.read()
 
-        self._words = words.splitlines()
+        # self._words = words.splitlines()
+
+        self._words = constants.LIBRARY
 
     def random_word(self):
         """ Picks a random word and returns it """
@@ -35,6 +38,7 @@ class Word(Actor):
 
 """ Testing Area """
 word = Word()
+
 
 for i in range(7000):
     random_word = word.random_word()
