@@ -20,7 +20,10 @@ class Word(Actor):
         self.set_text(self.random_word())
 
     def random_word(self):
-        """ Picks a random word and returns it """
+        """ Picks a random word and returns it 
+        
+        Return: word (string)
+        """
         length = len(self._words) - 1
         word_num = random.randint(0, length)
         return(self._words[word_num])
