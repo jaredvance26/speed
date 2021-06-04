@@ -17,23 +17,21 @@ class OutputService:
         Args:
             self (Output service): an instance of Outputservice.
             screen (Screen): an ASCIIMATICS screen.
-
-
-            """
+        """
         self.screen = screen
     
     def clear_screen(self):
-         """Clears the Asciimatics buffer in preparation for the next rendering.
+        """Clears the Asciimatics buffer in preparation for the next rendering.
 
-            Args:
-                self (OutputService): An instance of OutputService.
-            """ 
+        Args:
+            self (OutputService): An instance of OutputService.
+        """ 
         self._screen.clear_buffer(7, 0, 0)
         self._screen.print_at("-" * constants.MAX_X, 0, 0, 7)
         self._screen.print_at("-" * constants.MAX_X, 0, constants.MAX_Y, 7)
         
     def draw_actor(self,actor):
-     """Renders the given actor's text on the screen.
+        """Renders the given actor's text on the screen.
 
         Args:
             self (OutputService): An instance of OutputService.
@@ -46,7 +44,7 @@ class OutputService:
         self._screen.print_at(text, x, y, 7)
 
     def draw_actors(self,actors):
-          """Renders the given list of actors on the screen.
+        """Renders the given list of actors on the screen.
 
         Args:
             self (OutputService): An instance of OutputService.
@@ -57,9 +55,9 @@ class OutputService:
 
 
     def flush_buffer(self):
-            """Renders the screen.
+        """Renders the screen.
 
-            Args:
-                self (OutputService): An instance of OutputService.
-            """ 
+        Args:
+            self (OutputService): An instance of OutputService.
+        """ 
         self._screen.refresh()    

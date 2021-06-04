@@ -2,8 +2,7 @@ from time import sleep
 from game import constants
 from game.word import Word
 from game.score import Score
-from game.buffer impor Buffer
-
+from game.buffer import Buffer
 
 
 class Director:
