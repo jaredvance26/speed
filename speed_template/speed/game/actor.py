@@ -21,9 +21,9 @@ class Actor:
         Args:
             self (Actor): an instance of Actor.
         """
-        self._text = ""
+        self._text = ''
         self._position = Point(0, 0)
-        self._velocity = Point(0, 0)
+        self._velocity = Point(0, -1)
 
     def get_position(self):
         """Gets the actor's position in 2d space.
@@ -74,6 +74,7 @@ class Actor:
         y = 1 + (y1 + y2 - 1) % (constants.MAX_Y - 1)
         position = Point(x, y)
         self._position = position
+        
     def set_position(self, position):
         """Updates the actor's position to the given one.
         
