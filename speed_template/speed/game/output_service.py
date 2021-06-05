@@ -18,7 +18,7 @@ class OutputService:
             self (Output service): an instance of Outputservice.
             screen (Screen): an ASCIIMATICS screen.
         """
-        self.screen = screen
+        self._screen = screen
     
     def clear_screen(self):
         """Clears the Asciimatics buffer in preparation for the next rendering.
