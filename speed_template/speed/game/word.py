@@ -17,7 +17,7 @@ class Word(Actor):
         """ Class constructor. Reads file and splits it into a list """
         super().__init__()
         self._words = constants.LIBRARY
-
+        
     def random_word(self):
         """ Picks a random word and returns it 
         
